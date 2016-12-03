@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1073951366056",
+    "firebase_url": "https://phils-e1cde.firebaseio.com",
+    "project_id": "phils-e1cde",
+    "storage_bucket": "phils-e1cde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073951366056:android:e392452cce99972d",
+        "android_client_info": {
+          "package_name": "com.example.mbriskin.phils"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073951366056-74ue4guk6v3vol7radqs9sdk0shetjcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVix55hKXTmTyub-c-nVyIa4oZNW4NnFc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
