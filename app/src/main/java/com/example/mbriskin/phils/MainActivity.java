@@ -30,20 +30,19 @@ public class MainActivity extends AppCompatActivity {
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
+                // userID = loginResult.getAccessToken().getUserId()
                 Intent intent = new Intent(mainActivity, PhilsTonight.class);
                 startActivity(intent);
             }
 
             @Override
             public void onCancel() {
-                Intent intent = new Intent(mainActivity, PhilsTonight.class);
-                startActivity(intent);
+                // Add error
             }
 
             @Override
             public void onError(FacebookException e) {
-                Intent intent = new Intent(mainActivity, PhilsTonight.class);
-                startActivity(intent);
+                // Add error
             }
 
         });
