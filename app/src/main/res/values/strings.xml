@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Phils</string>
     <string name="facebook_app_id">1267561436600413</string>
+    <string name="title_activity_phils_tonight">PhilsTonight</string>
 </resources>

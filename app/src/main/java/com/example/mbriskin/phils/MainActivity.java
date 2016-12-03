@@ -1,5 +1,7 @@
 package com.example.mbriskin.phils;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -24,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         loginButton = (LoginButton)findViewById(R.id.login_button);
 
-
+        final Activity mainActivity = this;
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-
+                Intent intent = new Intent(mainActivity, PhilsTonight.class);
+                startActivity(intent);
             }
 
             @Override
