@@ -36,17 +36,25 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-
+                Intent intent = new Intent(mainActivity, PhilsTonight.class);
+                startActivity(intent);
             }
 
             @Override
             public void onError(FacebookException e) {
-
+                Intent intent = new Intent(mainActivity, PhilsTonight.class);
+                startActivity(intent);
             }
-        });
 
+        });
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
 }
+
