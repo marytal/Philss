@@ -1,5 +1,6 @@
 package com.example.mbriskin.phils;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,15 @@ public class PhilsTonight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phils_tonight);
 
+    }
+
+    void yes(View view){
+
+    }
+
+    void no(View view){
+        Intent intent = new Intent(this, ErrorMessage.class);
+        startActivity(intent);
     }
 
 }

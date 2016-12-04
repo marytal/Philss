@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
         setContentView(R.layout.activity_main);
@@ -47,13 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
+        Intent intent = new Intent(this, PhilsTonight.class);
+        startActivity(intent);
     }
 }
 
