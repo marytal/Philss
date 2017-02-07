@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.mbriskin.phils" >
+=======
+    package="com.example.mbriskin.phils">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> origin/master
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+<<<<<<< HEAD
         android:theme="@style/AppTheme" >
         <activity
             android:name=".login"
             android:label="@string/app_name" >
+=======
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> origin/master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
     </application>
 
 </manifest>
+=======
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".PhilsTonight"
+            android:label="@string/title_activity_phils_tonight"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".ErrorMessage" android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
+>>>>>>> origin/master
